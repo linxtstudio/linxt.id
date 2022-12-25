@@ -1,12 +1,14 @@
 ---
 import { Icon } from 'astro-icon'
 import Container from './Container.astro';
+
+import logo from '../assets/logo.svg'
 ---
 
 <header>
     <Container class="gap-[10px] py-4 bg-gray-900">
         <nav class="flex justify-between">
-            <img src="/assets/logo.svg" height="36" alt="Linxt" />
+            <img src={logo} height="36" alt="Linxt" />
             <ul class="flex text-white text-sm leading-5 font-semibold gap-6 items-center">
                 <li>
                     <a href="#products">Products</a>
