@@ -1,0 +1,42 @@
+---
+import { Icon } from 'astro-icon'
+import Container from './Container.astro';
+---
+
+<header>
+    <Container class="gap-[10px] py-4 bg-gray-900">
+        <nav class="flex justify-between">
+            <img src="/assets/logo.svg" height="36" alt="Linxt" />
+            <ul class="flex text-white text-sm leading-5 font-semibold gap-6 items-center">
+                <li>
+                    <a href="#products">Products</a>
+                </li>
+                <li>
+                    <a href="#solutions">Solutions</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a role="button" class="flex items-center justify-center py-3 px-6 rounded-lg border border-white hover:bg-white hover:text-gray-900 transition-colors" href="#">Hire us!</a>
+                </li>
+                <!-- Social Icons -->
+                <li class="w-6 h-6">
+                    <a href="https://github.com/linxtstudio" target="_blank" rel="noreferrer noopener">
+                        <Icon name="mdi:github" />
+                    </a>
+                </li>
+                <li class="w-6 h-6">
+                    <a href="https://medium.com/linxtstudio" target="_blank" rel="noreferrer noopener">
+                        <Icon name="ant-design:medium-circle-filled" />
+                    </a>
+                </li>
+                <li class="w-6 h-6">
+                    <a href="https://discord.link/linxtstudio" target="_blank" rel="noreferrer noopener">
+                        <Icon name="ic:baseline-discord" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </Container>
+</header>

@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Container from '../components/Container.astro';
+import { Icon } from 'astro-icon';
+---
+
+<Layout title="Linxt Studio">
+	<Navbar />
+	<main>
+		<Container class="py-32 bg-white">
+			<div class="flex flex-col gap-8 w-full">
+				<div class="flex flex-col gap-6 items-center text-center">
+					<h1 class="max-w-screen-lg text-6xl leading-none font-extrabold text-gray-900">Defining digital problem solving with our innovations!</h1>
+					<h2 class="max-w-screen-md text-xl leading-7 font-normal text-gray-700">Linxt lets you scale up your impact through technology with focus on user experience, quality and scalability</h2>
+				</div>
+				<div class="flex gap-4 justify-center">
+					<a role="button" class="flex items-center justify-center py-3 px-6 rounded-lg font-semibold bg-linxt hover:bg-linxt-600 text-white transition-colors" href="#solutions">Our Solutions</a>
+					<a role="button" class="flex gap-2 w-fit items-center justify-center py-3 px-6 rounded-lg font-semibold border border-linxt hover:bg-linxt text-linxt hover:text-white transition-colors" href="/works">
+						<span class="flex flex-shrink-0">Our Works</span>
+						<Icon class="w-6 h-6" name="ic:baseline-arrow-forward" />
+					</a>
+				</div>
+			</div>
+		</Container>
+	</main>
+</Layout>
